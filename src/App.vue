@@ -1,12 +1,10 @@
 <template>
   <v-app>
     <div id='nav'>
-      <router-link v-for='item in items' :key='item.text' :to="`${item.route}`">
-        <v-btn text tile  height=55 class='white--text'>
-          <v-icon left>{{ item.icon }}</v-icon>
+        <v-btn v-for='item in items' :key='item.text' :to="`${item.route}`" text tile  height=55 class='white--text'>
+          <v-icon left>{{ item.icon }}</v-icon> <br>
           <span>{{ item.text }}</span>
         </v-btn>
-      </router-link>
     </div>
     <v-content>
       <router-view></router-view>
@@ -59,6 +57,7 @@ export default {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  background-color: black;
+  background-image: linear-gradient(to top, #051937, #001e2e, #001e1f, #0f1c16, #191a16);
+  box-shadow: 0px 10px 30px #001e1f;
 }
 </style>
