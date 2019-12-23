@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Education from '../views/Education.vue'
-import ContactMe from '../views/ContactMe.vue'
+import Contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -30,9 +30,9 @@ const routes = [
     component: Education
   },
   {
-    path: '/contactMe',
-    name: 'contactMe',
-    component: ContactMe
+    path: '/contact',
+    name: 'contact',
+    component: Contact
   }
 ]
 

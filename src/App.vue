@@ -1,35 +1,64 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/portfolio">Portfolio</router-link> |
-      <router-link to="/education">Education</router-link> |
-      <router-link to="/contactMe">Contact Me</router-link>
+  <v-app>
+    <div id='nav'>
+      <router-link v-for='item in items' :key='item.text' :to="`${item.route}`">
+        <v-btn text tile  height=55 class='white--text'>
+          <v-icon left>{{ item.icon }}</v-icon>
+          <span>{{ item.text }}</span>
+        </v-btn>
+      </router-link>
     </div>
-    <router-view/>
-  </div>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: 'App',
+  data () {
+    return {
+      items: [
+        {
+          text: 'home',
+          icon: 'mdi-home',
+          route: '/'
+        },
+        {
+          text: 'about',
+          icon: 'mdi-account',
+          route: '/about'
+        },
+        {
+          text: 'portfolio',
+          icon: 'mdi-account-card-details',
+          route: '/portfolio'
+        },
+        {
+          text: 'education',
+          icon: 'mdi-book-open-page-variant',
+          route: '/education'
+        },
+        {
+          text: 'contact',
+          icon: 'mdi-email',
+          route: '/contact'
+        }
+      ]
     }
+  },
+  components: {
   }
+}
+</script>
+
+<style lang="scss">
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: black;
 }
 </style>
