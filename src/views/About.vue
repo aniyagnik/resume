@@ -90,22 +90,6 @@ export default {
               skill: '80'
             }
           ]
-        },
-        {
-          personalInfo: [
-            {
-              title: 'schooling',
-              content: 'Universal Public School',
-              session: '2017',
-              marks1: '9.5',
-              marks: '93.5'
-            },
-            {
-              title: 'Graduation',
-              content: 'Maharaja Surajmal Institute Of Technology',
-              marks1: '8'
-            }
-          ]
         }
       ]
     }
