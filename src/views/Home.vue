@@ -1,14 +1,14 @@
 <template>
   <div id='home'>
-    <h1>This is Home Page</h1>
-    <box-container :data=info></box-container>
+    <box-container :data='info' :key='info.heading'></box-container>
   </div>
 </template>
 
 <script>
-import box from '../components/box'
+import box from '../components/box.vue'
 
 export default {
+  name: 'home',
   components: {
     'box-container': box
   },
@@ -29,5 +29,9 @@ export default {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92.5vh;
 }
 </style>
