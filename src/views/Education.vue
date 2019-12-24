@@ -47,8 +47,9 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   height: 92.5vh;
 }
 </style>

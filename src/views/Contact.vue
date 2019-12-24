@@ -122,6 +122,7 @@ export default {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   height: 92.5vh;
   border:1px solid white;
   .flex-item{

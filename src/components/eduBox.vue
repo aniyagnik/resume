@@ -1,6 +1,6 @@
 <template>
   <div class='edu-box'>
-    <p class="display-1 text-capitalize">{{ institute.title }}</p>
+    <p class="display-1 text-uppercase font-weight-bold" style="font-family:castellar;">{{ institute.title }}</p>
     <p class="title">{{ institute.name }}</p>
     <p class="body-2">{{ institute.address }}</p>
     <p class="subtitle-1">SESSION : {{ institute.session }}</p>
@@ -17,9 +17,15 @@ export default {
 
 <style lang="scss">
 .edu-box{
-    background-image: linear-gradient(to right top, #c5e5ad, #b4ebcb, #b2ede4, #c0edf4, #d5ecf8, #cfdfe9, #c9d3da, #c2c7cb, #a4abaf, #879092, #6b7577, #515c5c);
-  opacity: 0.6;
+   background-image: radial-gradient(circle, #201d1f, #3b1a37, #4f1257, #5c047d, #5b00aa, #4d17b7, #3825c3, #0030d0, #003bb4, #1f4195, #334374, #404452);
+  opacity: 0.9;
   padding: 1vw;
   box-shadow: 0px 6px 20px white;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.edu-box:active {
+    color:red;
+    box-shadow: 0px 6px 15px rgb(148, 4, 4);
 }
 </style>

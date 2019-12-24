@@ -3,7 +3,7 @@
     <div id='nav'>
         <v-btn v-for='item in items' :key='item.text' :to="`${item.route}`" text tile  height=55 class='white--text'>
           <v-icon left>{{ item.icon }}</v-icon> <br>
-          <span>{{ item.text }}</span>
+          <span class='hidden-xs-only'>{{ item.text }}</span>
         </v-btn>
     </div>
     <v-content>
