@@ -17,7 +17,7 @@ export default {
       info: {
         heading: 'hi! there',
         line1: 'I am Anirudh Shankar Yagnik',
-        summary: 'I am a Student.I am a designer. I build websites on developer.'
+        summary: 'I am a Student.I am a designer. I build websites on NodeJs. I am a developer.'
       }
     }
   }
