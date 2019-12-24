@@ -2,8 +2,10 @@
  <b-container>
    <div id='container-box'>
        <h1 class='display-4 font-weight-bold text-capitalize'>{{ data.heading}}</h1>
-       <h2 class='display-2'>{{ data.line1 }}</h2>
-       <p class='headline'>{{ data.content}}</p>
+       <h2 class='heading'>{{ data.line1 }}</h2>
+       <p class='headline'>{{ data.summary}}</p>
+       <p class='body-2'>{{ data.title}}</p>
+       <p class='caption'>{{ data.content}}</p>
    </div>
  </b-container>
 </template>
