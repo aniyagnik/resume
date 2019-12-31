@@ -6,7 +6,7 @@
         <p class='title text-justify'>{{ info[0].content}}</p>
       </div>
     </div>
-    <div class='flex-item'>
+    <div class='flex-item'><br>
       <h1 class="display-2 white--text font-weight-bold text-capitalize">skills</h1>
       <table cellspacing=30 border='1'>
           <tr>

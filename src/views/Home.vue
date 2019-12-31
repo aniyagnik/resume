@@ -1,5 +1,8 @@
 <template>
   <div id='home'>
+    <div class='flex-item pic'>
+      <img class='pic' src="../assets/1.jpg" >
+    </div>
     <div class='flex-item'>
       <box-container :data='info' :key='info.heading'></box-container>
     </div>
@@ -48,12 +51,22 @@ export default {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  flex-direction: row;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   // border:3px solid rgb(0, 255, 0);
   height: 92.5vh;
+  .pic{
+    width: 10vw;
+    height: 10vw;
+    box-shadow: 0px 5px 30px white;
+  }
+  .pic:active{
+    box-shadow: 0px 3px 20px rgb(233, 190, 190);
+    transform: all 0.5s;
+  }
   .flex-item {
     // border:1px solid red;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

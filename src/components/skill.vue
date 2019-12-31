@@ -32,8 +32,14 @@ export default {
   opacity: 0.9;
   padding: 1vw;
   box-shadow: 0px 6px 20px white;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#container-box-skills:hover{
+  box-shadow: 0px 3px 10px gold;
+   background-image: linear-gradient(to right top, #2261d6, #0088ec, #00a7e5, #00c0cb, #00d5ac, #00d79d, #00d88b, #00d976, #00cb87, #00bb92, #00ab96, #279b94);
+  transition: all 1s;
 }
 </style>
