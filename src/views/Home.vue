@@ -34,9 +34,9 @@ export default {
   data () {
     return {
       info: {
-        heading: 'hi! there',
+        heading: 'hi there!',
         line1: 'I am Anirudh Shankar Yagnik',
-        summary: 'I am a Student.I am a designer. I build websites on NodeJs. I am a developer.'
+        summary: ['I am a B.Tech student.', 'I am a good web designer and developer.', 'I am see myself as a good explorer and quick learner.']
       }
     }
   }
@@ -44,7 +44,7 @@ export default {
 </script>
 <style lang="scss">
 #home{
-  background-image: url('../assets/28171.jpg');
+  background-image: url('../assets/28154.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

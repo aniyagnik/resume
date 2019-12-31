@@ -9,7 +9,7 @@
         <v-text-field
           :rules="emailRules"
           label="E-mail"
-          value='ani789yagnik@gmial.com'
+          value='ani789yagnik@gmail.com'
           :disabled="true"
           required
         ></v-text-field>
@@ -28,7 +28,7 @@
         ></v-text-field>
         <v-textarea
             subject="input-7-1"
-            label="enter body"
+            label="message"
             value=""
             hint="body"
           ></v-textarea>
@@ -50,7 +50,7 @@
     </v-row>
     </div>
     <div class='flex-item white--text' style='background-color:crimson'>
-      <p class='headline text-center font-weight-bold text-capitalize' id='head'>other contacts</p>
+      <p class='headline text-center font-weight-bold text-capitalize' id='head'>contacts</p>
       <p class="body-2">
         <v-icon dark left >mdi-cellphone</v-icon>
         <a style='text-decoration:none;color:white' href="tel:+9898778871">91+9898778871</a>

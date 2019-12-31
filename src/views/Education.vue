@@ -42,7 +42,7 @@ export default {
 </script>
 <style lang="scss">
 #education{
-  background-image: url('../assets/28156.jpg');
+  background-image: url('../assets/28155.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -3,7 +3,7 @@
    <div id='container-box'>
        <h1 class='display-4 font-weight-bold text-capitalize'>{{ data.heading}}</h1>
        <h2 class='headine'>{{ data.line1 }}</h2>
-       <p class='headline'>{{ data.summary}}</p>
+       <li class='title' v-for='(line,i) in data.summary' :key='i'>{{line}}</li>
        <p class='body-2'>{{ data.title}}</p>
        <p class='caption'>{{ data.content}}</p>
    </div>

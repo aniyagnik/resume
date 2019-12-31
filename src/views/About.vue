@@ -2,8 +2,8 @@
   <div id='about'>
     <div class="flex-item black--text" style="max-width:50vw">
       <div id='container-box'>
-        <p class='display-1 font-weight-bold text-capitalize '>{{ info[0].title}}</p>
-        <p class='subtitle-1 text-justify'>{{ info[0].content}}</p>
+        <p class='display-2 font-weight-bold text-capitalize '>{{ info[0].title}}</p>
+        <p class='title text-justify'>{{ info[0].content}}</p>
       </div>
     </div>
     <div class='flex-item'>
@@ -61,7 +61,7 @@ export default {
       info: [
         {
           title: 'about',
-          content: 'I am an undergraduate student pursuing my Bachelor’s Degree in Computer Science engineering from Maharaja Surajmal Institute of Technology (MSIT). I am hardworking and have good time management skills. I believe my fast learning abilities, good listening skills and commitment to succeed makes me an ideal learner.'
+          content: 'I am currently pursuing my B.Tech Degree in Computer Science engineering from Guru Gobind Singh Indraprastha University (IP University). Smart working and good time management skills are some of my best qualities. I believe my quick learning abilities, good listening skills and commitment to succeed makes me from the crowd. I am looking for oppotunities to enhance my skills.'
         },
         {
           skills: [
