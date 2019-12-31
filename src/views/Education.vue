@@ -1,39 +1,46 @@
 <template>
   <div id='education'>
-    <div class='flex-item' v-for='(item,i) in institutes' :key=i>
-      <edu-container :institute='item'></edu-container>
-    </div>
+    <table class="edu-box">
+      <tr>
+        <th>Class/Degree</th>
+        <th>Board/university</th>
+        <th>Percentage</th>
+        <th>year of passing</th>
+      </tr>
+      <tr v-for='(obj,i) in institutes' :key='i'>
+        <td>{{ obj.type }}</td>
+        <td>{{ obj.board }}</td>
+        <td>{{ obj.marks }}</td>
+        <td>{{ obj.year }}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
 <script>
-import eduBox from '../components/eduBox.vue'
 
 export default {
   name: 'education',
-  components: {
-    'edu-container': eduBox
-  },
   data () {
     return {
       institutes: [
         {
-          title: 'schooling',
-          name: 'Universal Public School',
-          session: '2017',
-          marks1: '9.5',
-          ex1: '10th CCE percentile : ',
-          marks2: '93.5',
-          ex2: '12th Board percentage : '
+          type: '10th',
+          board: 'CBSE',
+          year: '2015',
+          marks: '9.5 percentile'
         },
         {
-          title: 'Graduation',
-          name: 'Maharaja Surajmal Institute Of Technology',
-          session: '2017-2021',
-          marks1: '8',
-          ex1: 'current SPGA : ',
-          marks2: '',
-          ex2: ''
+          type: '12th',
+          board: 'CBSE',
+          year: '2017',
+          marks: '93.4 percentage'
+        },
+        {
+          type: 'B.Tech (CSE)',
+          board: 'GGSIPU',
+          year: 'pursuing',
+          marks: '80 percentage'
         }
       ]
     }
@@ -51,5 +58,27 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   height: 92.5vh;
+  .edu-box{
+    background-image: linear-gradient(to right top, #181517, #363237, #57535a, #797680, #9b9ca9, #9a9fab, #99a1ad, #99a4af, #78848b, #5a6468, #3f4647, #262a2a);
+    opacity: 0.9;
+    padding: 1vw;
+    box-shadow: 0px 6px 20px white;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .edu-box:active {
+      color:red;
+      box-shadow: 0px 6px 15px rgb(148, 4, 4);
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+    color: black;
+   }
 }
 </style>
