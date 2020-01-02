@@ -1,6 +1,5 @@
 <template>
   <div id='portfolio'>
-    <h1>This is Portfolio Page</h1>
     <div id='flex'>
       <div class="flex-item" v-for='(project,i) in info' :key='i'>
         <project-card :project='project'></project-card>
@@ -22,7 +21,6 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  overflow: auto;
 }
 .flex-item{
   padding: 5vw;
@@ -41,27 +39,27 @@ export default {
         {
           name: 'Social Networking Site',
           image: 'SNS.jpg',
-          summary: 'A SNS (Social Networking Site) with functionalities sign-up/login, uploading posts, viewing user, web-lock etc.',
+          summary: 'A SNS (Social Networking Site) with functionalities like sign-up/login, uploading posts, viewing user, web-lock etc.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'quiz',
-          summary: '',
-          link: '',
-          github: ''
+          summary: 'An website offering quiz on differnt topic of the world. The website offers 10 multiple choice questions on selected topic and keeps track of the rght answers.',
+          link: 'https://project1-19.herokuapp.com',
+          github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'chat app',
-          summary: '',
-          link: '',
-          github: ''
+          summary: 'Offers to chat with friends on login is performed. Can send messages to multiple users at a given time. offers option of personal chat.',
+          link: 'https://project1-19.herokuapp.com',
+          github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'cosmos',
-          summary: '',
-          link: '',
-          github: ''
+          summary: 'Website give interesting information about the cosmos. Detailed discription of our solar system.',
+          link: 'https://project1-19.herokuapp.com',
+          github: 'https://aniyagnik/nodejsproject19.git'
         }
       ]
     }
