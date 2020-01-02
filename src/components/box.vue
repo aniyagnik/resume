@@ -25,8 +25,6 @@ export default {
 #container-box{
   background-color: antiquewhite;
   opacity: 0.6;
-  margin-right: 20vw;
-  margin-left: 20vw;
   padding-top: 3vw;
   padding-bottom: 3vw;
   padding-right: 10vw;

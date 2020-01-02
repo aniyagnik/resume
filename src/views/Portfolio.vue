@@ -24,6 +24,9 @@
   flex-wrap: wrap;
   overflow: auto;
 }
+.flex-item{
+  padding: 5vw;
+}
 </style>
 
 <script>

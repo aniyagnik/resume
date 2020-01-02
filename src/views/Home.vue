@@ -52,18 +52,20 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   flex-direction: row;
+  padding-top: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  // border:3px solid rgb(0, 255, 0);
   height: 92.5vh;
+  // border:3px solid rgb(0, 255, 0);
   .pic{
     width: 10vw;
     height: 10vw;
-    box-shadow: 0px 5px 30px white;
+    box-shadow: 0px 5px 20px rgb(233, 190, 190);
+    padding:0vw;
   }
-  .pic:active{
+  .pic:hover{
     box-shadow: 0px 3px 20px rgb(233, 190, 190);
     transform: all 0.5s;
   }
