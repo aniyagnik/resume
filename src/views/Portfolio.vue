@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 .flex-item{
-  padding: 5vw;
+  padding: 2vw;
 }
 </style>
 

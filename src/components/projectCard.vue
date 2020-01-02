@@ -4,8 +4,8 @@
     <div class='projectcard'>
       <div class='image'></div>
       <div class='details text-center'>
-        <p class='subtitle-1 font-weight-black red darken-3 white--text'>{{ project.summary }}</p>
-        <p class='subtitle-1 font-weight-light'>
+        <p class='summ subtitle-1 font-weight-black white--text'>{{ project.summary }}</p>
+        <p class='link subtitle-1 font-weight-light'>
           <kbd>github link</kbd>&nbsp;
           <code><a :href="`${ project.github }`">{{ project.github }}</a></code>
         </p>
@@ -29,15 +29,15 @@ export default {
   border: 5px solid crimson;
 }
 .projectcard {
-  background-color: rgb(255, 255, 255);
-    width: 32vw;
-    height: 23vw;
+  background-color: #c5fcee;
+    width: 27vw;
+    height: 20vw;
 }
 .image{
   background-image: url('../assets/1.jpg');
-  width: 32vw;
+  width: 27vw;
   border: 5px solid black;
-  height: 23vw;
+  height: 20vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,24 +45,31 @@ export default {
 .projectcard:hover{
   .details{
     opacity: 1;
+    width: 27vw;
+    height: 20vw;
+    padding: 5%;
     transition: opacity 1s ;
+    .summ{
+      display: block;
+    }
+    .link{
+      display: block;
+    }
   }
   .image{
     display: none;
   }
 }
 .details {
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  padding: 5%;
-  width: 32vw;
-  height: 23vw;
+  background-color: #c5fcee;
   opacity: 0;
   border: 5px solid black;
 }
+.link{
+  display: none;
+}
 .v-application .head {
-  margin: 0px;
-  width: 32vw;
+  width: 27vw;
    background-image: linear-gradient(to right top, #4e4e4e, #545357, #585960, #5d5f6a, #606574, #657286, #688098, #688eaa, #63a8c5, #59c4db, #54e0ea, #5ffbf1);
   border: 5px solid black;
   justify-content: center;
@@ -70,8 +77,14 @@ export default {
   padding-top: 4px;
   margin: 0px;
 }
+.summ{
+  display: none;
+  background-color: #85123f;
+  padding:2px;
+  border-radius: 7%;
+}
 .v-application .foot {
-  width: 32vw;
+  width: 27vw;
    background-image: linear-gradient(to right top, #4e4e4e, #545357, #585960, #5d5f6a, #606574, #657286, #688098, #688eaa, #63a8c5, #59c4db, #54e0ea, #5ffbf1);
   border: 5px solid black;
   justify-content: center;
