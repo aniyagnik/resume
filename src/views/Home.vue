@@ -10,16 +10,15 @@
       <div class="flex-inside">
         <div class="flex-inside-item">
           <v-icon left dark x-large>mdi-github-circle</v-icon>
-          <span class='body-1 font-weight-bold text-capitalize'>github</span><br>
+          <a href="https://github.com/aniyagnik"><span class='body-1 font-weight-bold white--text text-capitalize'> github</span></a><br>
         </div>
         <div class="flex-inside-item">
           <v-icon left dark large>mdi-linkedin-box</v-icon>
-          <span class='body-1 font-weight-bold text-capitalize'>linkedIn</span><br>
+          <a href="http://linkedin/ani789yagnik"><span class='body-1 font-weight-bold white--text text-capitalize'>linkedIn</span></a><br>
         </div>
         <div class="flex-inside-item">
-          <v-icon left dark>mdi-yin-yang</v-icon>
-          <span class='body-1 font-weight-bold text-capitalize'>B.tech in CSE</span><br>
-          <p class="caption text-center">pursuing curently</p>
+          <v-icon left dark large>mdi-alpha-h-box</v-icon>
+          <a href="https://www.hackerrank.com/Ani789yagnik?h_r=internal-search&hr_r=1"><span class='body-1 font-weight-bold white--text text-capitalize'>HackerRank</span></a><br>
         </div>
       </div>
     </div>
@@ -91,5 +90,8 @@ export default {
       opacity:1.1;
     }
   }
+}
+a{
+  text-decoration: none;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id='contact'>
-    <div id='form' class="flex-item">
+    <div id='form' class="flex-itemC">
       <v-row align="center">
       <v-form
         ref="form"
@@ -49,7 +49,7 @@
       </v-form>
     </v-row>
     </div>
-    <div class='flex-item white--text' style='background-color:crimson'>
+    <div class='flex-itemC white--text' style='background-color:crimson'>
       <p class='headline text-center font-weight-bold text-capitalize' id='head'>contacts</p>
       <p class="body-2">
         <v-icon dark left >mdi-cellphone</v-icon>
@@ -125,7 +125,7 @@ export default {
   flex-wrap: wrap;
   height: 92.5vh;
   border:1px solid white;
-  .flex-item{
+  .flex-itemC{
     border:1px solid rgb(220, 255, 25);
   }
   #head{

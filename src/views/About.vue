@@ -1,12 +1,12 @@
 <template>
   <div id='about'>
-    <div class="flex-item black--text" style="max-width:50vw">
+    <div class="flex-itemA black--text" style="max-width:50vw">
       <div id='container-box'>
         <p class='display-2 font-weight-bold text-capitalize '>{{ info[0].title}}</p>
         <p class='title text-justify'>{{ info[0].content}}</p>
       </div>
     </div>
-    <div class='flex-item'><br>
+    <div class='flex-itemA'><br>
       <h1 class="display-2 white--text font-weight-bold text-capitalize">skills</h1>
       <table cellspacing=30 border='1'>
           <tr>
@@ -26,7 +26,7 @@
           </tr>
         </table>
     </div>
-    <div class="flex-item" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
+    <div class="flex-itemA" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
         <div class="flex-inside-item">
           <v-icon left dark>mdi-yin-yang</v-icon>
@@ -108,15 +108,13 @@ export default {
   align-items: center;
   // border:1px solid white;
   width: 100vw;
-  .flex-item{
-    // border:1px solid cyan;
+  .flex-itemA{
     color: whitesmoke;
   }
   #container-box{
     background-color: antiquewhite;
     opacity: 0.6;
     padding: 3vw;
-    margin:2vw;
   }
   .flex-inside{
     color:whitesmoke;
