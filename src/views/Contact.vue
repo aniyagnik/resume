@@ -50,12 +50,12 @@
     </v-row>
     </div>
     <div class='flex-itemC white--text' style='background-color:crimson'>
-      <p class='headline text-center font-weight-bold text-capitalize' id='head'>contacts</p>
-      <p class="body-2">
+      <p style='font-size:1.5em' class=' text-center font-weight-bold text-capitalize' id='head'>contacts</p>
+      <p style='font-size:0.85em' >
         <v-icon dark left >mdi-cellphone</v-icon>
         <a style='text-decoration:none;color:white' href="tel:+9898778871">91+9898778871</a>
       </p>
-      <p class="body-2">
+      <p style='font-size:0.85em' >
         <v-icon dark left >mdi-home</v-icon>
         <a style='text-decoration:none;color:white'
         href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Janakpuri,+New+Delhi,+Delhi,+India&aq=0&oq=janapuri+new+delhi&sll=37.0625,-95.677068&sspn=42.987658,86.572266&ie=UTF8&hq=&hnear=Janakpuri,+New+Delhi,+West+Delhi,+Delhi,+India&ll=28.620123,77.093858&spn=0.186865,0.338173&t=m&z=12"
@@ -63,7 +63,7 @@
           A block,red spot,southern jupiter (40 km from epicenter)
           </a>
       </p>
-      <p class="body-2">
+      <p style='font-size:0.85em' >
         <v-icon dark left >mdi-domain</v-icon>
         <a style='text-decoration:none;color:white'
         href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Janakpuri,+New+Delhi,+Delhi,+India&aq=0&oq=janapuri+new+delhi&sll=37.0625,-95.677068&sspn=42.987658,86.572266&ie=UTF8&hq=&hnear=Janakpuri,+New+Delhi,+West+Delhi,+Delhi,+India&ll=28.620123,77.093858&spn=0.186865,0.338173&t=m&z=12"
@@ -71,7 +71,7 @@
         C-4, Janakpuri, Delhi, India
         </a>
       </p>
-      <p class="body-2">
+      <p style='font-size:0.85em' >
         <v-icon dark left >mdi-contact-mail</v-icon>
         <a style='text-decoration:none;color:white'
         href="mailto:ani789yagnik@gmail.com"
@@ -124,9 +124,11 @@ export default {
   align-items: center;
   flex-wrap: wrap;
   height: 92.5vh;
-  border:1px solid white;
   .flex-itemC{
     border:1px solid rgb(220, 255, 25);
+    margin: 1vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
   }
   #head{
     padding: 5px 8px;

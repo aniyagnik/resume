@@ -1,24 +1,24 @@
 <template>
   <div id='home'>
-    <div class='flex-item pic'>
+    <div class='flex-itemH pic'>
       <img class='pic' src="../assets/1.jpg" >
     </div>
-    <div class='flex-item'>
+    <div class='flex-itemH infoBox'>
       <box-container :data='info' :key='info.heading'></box-container>
     </div>
-    <div class="flex-item" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
+    <div class="flex-itemH" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
         <div class="flex-inside-item">
           <v-icon left dark x-large>mdi-github-circle</v-icon>
-          <a href="https://github.com/aniyagnik"><span class='body-1 font-weight-bold white--text text-capitalize'> github</span></a><br>
+          <a href="https://github.com/aniyagnik"><span style='font-size: 1.1em' class='font-weight-bold white--text text-capitalize'> github</span></a><br>
         </div>
         <div class="flex-inside-item">
           <v-icon left dark large>mdi-linkedin-box</v-icon>
-          <a href="http://linkedin/ani789yagnik"><span class='body-1 font-weight-bold white--text text-capitalize'>linkedIn</span></a><br>
+          <a href="http://linkedin/ani789yagnik"><span style='font-size: 1.1em' class='font-weight-bold white--text text-capitalize'>linkedIn</span></a><br>
         </div>
         <div class="flex-inside-item">
           <v-icon left dark large>mdi-alpha-h-box</v-icon>
-          <a href="https://www.hackerrank.com/Ani789yagnik?h_r=internal-search&hr_r=1"><span class='body-1 font-weight-bold white--text text-capitalize'>HackerRank</span></a><br>
+          <a href="https://www.hackerrank.com/Ani789yagnik?h_r=internal-search&hr_r=1"><span style='font-size: 1.1em' class='body-1 font-weight-bold white--text text-capitalize'>HackerRank</span></a><br>
         </div>
       </div>
     </div>
@@ -68,8 +68,8 @@ export default {
     box-shadow: 0px 3px 20px rgb(233, 190, 190);
     transform: all 0.5s;
   }
-  .flex-item {
-    // border:1px solid red;
+  .flex-itemH {
+    margin:2vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .flex-inside{
@@ -93,5 +93,69 @@ export default {
 }
 a{
   text-decoration: none;
+}
+@media only screen and (max-width: 1080px) {
+  #home{
+    .pic{
+      width: 16vw;
+      height: 16vw;
+    }
+    .infoBox{
+      width: 75vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #home{
+    .pic{
+      width: 16vw;
+      height: 16vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  #home{
+    .pic{
+      width: 19vw;
+      height: 19vw;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  #home{
+    .pic{
+      width: 23vw;
+      height: 23vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #home{
+    .pic{
+      width: 27vw;
+      height: 27vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #home{
+    .pic{
+      width: 30vw;
+      height: 30vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #home{
+    .pic{
+      width: 40vw;
+      height: 40vw;
+    }
+  }
 }
 </style>

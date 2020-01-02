@@ -20,10 +20,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: auto;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 1000px) {
+  .flex-item{
+    padding: 5vw;
+  }
+}
 .flex-item{
-  padding: 2vw;
+    padding: 3vw;
+  }
+@media only screen and (max-width: 850px) {
+  .flex-item{
+    padding-right: 1vw;
+    padding-left: 1vw;
+  }
 }
 </style>
 

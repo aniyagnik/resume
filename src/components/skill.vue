@@ -1,7 +1,7 @@
 <template>
  <b-container>
    <div id='container-box-skills'>
-       <h1 class='headline font-weight-bold text-capitalize '>{{ skill.lang }}&nbsp;&nbsp;&nbsp;</h1>
+       <h1 style='font-size: 1.5em;color: blue'  class=' font-weight-bold text-capitalize '>{{ skill.lang }}&nbsp;&nbsp;&nbsp;</h1>
         <v-progress-circular
         :rotate="360"
         :size="100"

@@ -1,14 +1,14 @@
 <template>
   <div id='about'>
-    <div class="flex-itemA black--text" style="max-width:50vw">
+    <div class="flex-itemA black--text aboutInfo">
       <div id='container-box'>
-        <p class='display-2 font-weight-bold text-capitalize '>{{ info[0].title}}</p>
-        <p class='title text-justify'>{{ info[0].content}}</p>
+        <p style='font-size: 2.5em' class=' font-weight-black text-uppercase'>{{ info[0].title}}</p>
+        <p style='font-size: 1.25em' class='font-weight-bold text-justify'>{{ info[0].content}}</p>
       </div>
     </div>
     <div class='flex-itemA'><br>
-      <h1 class="display-2 white--text font-weight-bold text-capitalize">skills</h1>
-      <table cellspacing=30 border='1'>
+      <h1 style='font-size: 2.5em ' class="text-center white--text font-weight-black text-uppercase">skills</h1>
+      <table cellspacing=30 class='skillTable'>
           <tr>
             <td v-for='skill in info[1].skills.slice(0,2)' :key='skill.lang'>
               <skill-container :skill='skill'></skill-container>
@@ -30,17 +30,17 @@
       <div class="flex-inside">
         <div class="flex-inside-item">
           <v-icon left dark>mdi-yin-yang</v-icon>
-          <span class='display-1 font-weight-bold text-capitalize'>Krishna Nagar, Delhi</span><br>
+          <span style='font-size: 2em'  class=' font-weight-bold text-capitalize'>Krishna Nagar, Delhi</span><br>
           <p class="caption text-center">HomeTown</p>
         </div>
         <div class="flex-inside-item">
           <v-icon left dark>mdi-yin-yang</v-icon>
-          <span class='display-1 font-weight-bold   text-capitalize'>20 Years</span><br>
+          <span style='font-size: 2em'  class=' font-weight-bold   text-capitalize'>20 Years</span><br>
           <p class="caption text-center">Age</p>
         </div>
         <div class="flex-inside-item">
           <v-icon left dark>mdi-yin-yang</v-icon>
-          <span class='display-1 font-weight-bold   text-capitalize'>B.tech in CSE</span><br>
+          <span style='font-size: 2em'  class=' font-weight-bold   text-capitalize'>B.tech in CSE</span><br>
           <p class="caption text-center">pursuing curently</p>
         </div>
       </div>
@@ -133,5 +133,18 @@ export default {
     }
   }
 }
-
+/*.skillTable{
+  background-image: linear-gradient(to right top, #af1e38, #d04f27, #e28200, #e2b600, #cfeb12);
+  padding: 1vw;
+  border:2vw solid brown;
+  box-shadow: 0px 6px 5px white;
+}*/
+.aboutInfo{
+  max-width:50vw
+}
+@media only screen and (max-width: 1300px) {
+  .aboutInfo{
+    max-width:70vw
+  }
+}
 </style>

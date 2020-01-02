@@ -1,17 +1,17 @@
 <template>
   <div class="box">
-      <p class='head headline font-weight-bold text-uppercase text-center'>{{ project.name}}</p>
+      <p style='font-size: 1.5em' class='head font-weight-bold text-uppercase text-center'>{{ project.name}}</p>
     <div class='projectcard'>
-      <div class='image'></div>
+      <div class='image' :style="bgColor(project.image)"></div>
       <div class='details text-center'>
-        <p class='summ subtitle-1 font-weight-black white--text'>{{ project.summary }}</p>
-        <p class='link subtitle-1 font-weight-light'>
+        <p style='font-size: 1.1em' class='summ font-weight-black white--text'>{{ project.summary }}</p>
+        <p style='font-size: 1em' class='link font-weight-light'>
           <kbd>github link</kbd>&nbsp;
           <code><a :href="`${ project.github }`">{{ project.github }}</a></code>
         </p>
       </div>
     </div>
-    <p class='foot subtitle-1 font-weight-light text-center'>
+    <p style='font-size: 1em' class='foot font-weight-light text-center'>
       <kbd>site link</kbd>
       <code><a :href="`${ project.link }`">{{ project.link }}</a></code>
     </p>
@@ -20,7 +20,12 @@
 
 <script>
 export default {
-  props: [ 'project' ]
+  props: [ 'project' ],
+  methods: {
+    bgColor (val) {
+      return { backgroundImage: `url(../assets/${val})` }
+    }
+  }
 }
 </script>
 <style lang='scss'>
@@ -61,6 +66,7 @@ export default {
   }
 }
 .details {
+  overflow: auto;
   background-color: #c5fcee;
   opacity: 0;
   border: 5px solid black;
@@ -94,4 +100,97 @@ export default {
   margin: 0px;
 }
 
+@media only screen and (max-width: 1050px) {
+ .projectcard {
+    width: 40vw;
+    height: 32vw;
+  }
+  .image{
+    width: 40vw;
+    height: 32vw;
+  }
+  .projectcard:hover{
+    .details{
+      width: 40vw;
+      height: 32vw;
+    }
+  }
+  .v-application .head {
+    width: 40vw;
+  }
+  .v-application .foot {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 850px) {
+ .projectcard {
+    width: 45vw;
+    height: 32vw;
+  }
+  .head{
+    font-size: 1.3em;
+  }
+  .image{
+    width: 45vw;
+    height: 32vw;
+  }
+  .projectcard:hover{
+    .details{
+      width: 45vw;
+      height: 32vw;
+    }
+  }
+  .v-application .head {
+    width: 45vw;
+  }
+  .v-application .foot {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+ .projectcard {
+    width: 70vw;
+    height: 50vw;
+  }
+  .image{
+    width: 70vw;
+    height: 50vw;
+  }
+  .projectcard:hover{
+    .details{
+      width: 70vw;
+      height: 50vw;
+    }
+  }
+  .v-application .head {
+    width: 70vw;
+  }
+  .v-application .foot {
+    width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+ .projectcard {
+    width: 94vw;
+    height: 70vw;
+  }
+  .image{
+    width: 94vw;
+    height: 70vw;
+  }
+  .projectcard:hover{
+    .details{
+      width: 94vw;
+      height: 70vw;
+    }
+  }
+  .v-application .head {
+    width: 94vw;
+  }
+  .v-application .foot {
+    width: 94vw;
+  }
+}
 </style>
