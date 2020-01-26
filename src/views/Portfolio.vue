@@ -57,18 +57,21 @@ export default {
         },
         {
           name: 'quiz',
+          image: 'quiz.jpg',
           summary: 'An website offering quiz on differnt topic of the world. The website offers 10 multiple choice questions on selected topic and keeps track of the rght answers.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'chat app',
+          image: 'chat.jpg',
           summary: 'Offers to chat with friends on login is performed. Can send messages to multiple users at a given time. offers option of personal chat.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'cosmos',
+          image: 'cosmos.jpg',
           summary: 'Website give interesting information about the cosmos. Detailed discription of our solar system.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'

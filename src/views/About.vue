@@ -8,23 +8,10 @@
     </div>
     <div class='flex-itemA'><br>
       <h1 style='font-size: 2.5em ' class="text-center white--text font-weight-black text-uppercase">skills</h1>
-      <table cellspacing=30 class='skillTable'>
-          <tr>
-            <td v-for='skill in info[1].skills.slice(0,2)' :key='skill.lang'>
-              <skill-container :skill='skill'></skill-container>
-            </td>
-          </tr>
-          <tr>
-            <td v-for='skill in info[1].skills.slice(2,4)' :key='skill.lang'>
-              <skill-container :skill='skill'></skill-container>
-            </td>
-          </tr>
-          <tr>
-            <td v-for='skill in info[1].skills.slice(4,6)' :key='skill.lang'>
-              <skill-container :skill='skill'></skill-container>
-            </td>
-          </tr>
-        </table>
+        <div v-for='skill in info[1].skills' :key='skill.lang'>
+          <div style='background-color: black;'>{{skill.lang}}</div>
+          <skill-container :skill='skill'></skill-container>
+        </div>
     </div>
     <div class="flex-itemA" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
@@ -49,8 +36,8 @@
 </template>
 
 <script>
-import skill from '../components/skill.vue'
 
+import skill from '../components/skill'
 export default {
   name: 'about',
   components: {

@@ -2,7 +2,7 @@
   <div class="box">
       <p style='font-size: 1.5em' class='head font-weight-bold text-uppercase text-center'>{{ project.name}}</p>
     <div class='projectcard'>
-      <div class='image' :style="bgColor(project.image)"></div>
+      <div class='image'></div>
       <div class='details text-center'>
         <p style='font-size: 1.1em' class='summ font-weight-black white--text'>{{ project.summary }}</p>
         <p style='font-size: 1em' class='link font-weight-light'>
@@ -20,12 +20,7 @@
 
 <script>
 export default {
-  props: [ 'project' ],
-  methods: {
-    bgColor (val) {
-      return { backgroundImage: `url(../assets/${val})` }
-    }
-  }
+  props: [ 'project' ]
 }
 </script>
 <style lang='scss'>
@@ -39,7 +34,6 @@ export default {
     height: 20vw;
 }
 .image{
-  background-image: url('../assets/1.jpg');
   width: 27vw;
   border: 5px solid black;
   height: 20vw;
