@@ -25,7 +25,6 @@ export default {
 
 <style lang="scss">
 #container-box-skills{
-  background-color: crimson;
   opacity: 0.9;
   padding: 1vw;
   cursor: pointer;

@@ -7,27 +7,23 @@
       </div>
     </div>
     <div class='flex-itemA'><br>
-      <h1 style='font-size: 2.5em ' class="text-center white--text font-weight-black text-uppercase">skills</h1>
+      <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
+        <v-icon dark large>mdi-chart-bar</v-icon>
+        skills</div>
+        <br>
         <div v-for='skill in info[1].skills' :key='skill.lang'>
-          <div style='background-color: black;'>{{skill.lang}}</div>
+          <div style='margin-left:5px;'>{{skill.lang}}</div>
           <skill-container :skill='skill'></skill-container>
         </div>
     </div>
     <div class="flex-itemA" >
-      <table class="edu-box">
-        <tr>
-          <th>Class/Degree</th>
-          <th>Board/university</th>
-          <th>Percentage</th>
-          <th>year of passing</th>
-        </tr>
-        <tr v-for='(obj,i) in info[2].institutes' :key='i'>
-          <td>{{ obj.type }}</td>
-          <td>{{ obj.board }}</td>
-          <td>{{ obj.marks }}</td>
-          <td>{{ obj.year }}</td>
-        </tr>
-      </table>
+      <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
+        <v-icon dark large>mdi-book-open-page-variant</v-icon>
+        education</div>
+      <br>
+      <div v-for='(institute,i) in info[2].institutes' :key=i>
+        <edu-container :institute='institute'></edu-container>
+      </div>
     </div>
     <div class="flex-itemA" style='min-width:100vw;padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
@@ -54,10 +50,12 @@
 <script>
 
 import skill from '../components/skill'
+import edu from '../components/education'
 export default {
   name: 'about',
   components: {
-    'skill-container': skill
+    'skill-container': skill,
+    'edu-container': edu
   },
   data () {
     return {
@@ -97,21 +95,27 @@ export default {
         {
           institutes: [
             {
-              type: '10th',
+              name: 'Universal Public School',
+              degree: '10th',
               board: 'CBSE',
               year: '2015',
+              place: 'delhi',
               marks: '9.5 percentile'
             },
             {
-              type: '12th',
+              name: 'Universal Public School',
+              degree: '12th',
               board: 'CBSE',
               year: '2017',
+              place: 'delhi',
               marks: '93.4 percentage'
             },
             {
-              type: 'B.Tech (CSE)',
+              name: 'Maharaja Surajmal Institute Of Technology',
+              degree: 'B.Tech (CSE)',
               board: 'GGSIPU',
               year: 'pursuing',
+              place: 'delhi',
               marks: '80 percentage'
             }
           ]
@@ -135,7 +139,6 @@ export default {
   width: 100vw;
   .flex-itemA{
     color: whitesmoke;
-    border:20px solid green;
     padding:10px;
   }
   #container-box{
