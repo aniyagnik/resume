@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Portfolio from '../views/Portfolio.vue'
-import Education from '../views/Education.vue'
 import Contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
@@ -23,11 +22,6 @@ const routes = [
     path: '/portfolio',
     name: 'portfolio',
     component: Portfolio
-  },
-  {
-    path: '/education',
-    name: 'education',
-    component: Education
   },
   {
     path: '/contact',

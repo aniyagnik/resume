@@ -13,7 +13,23 @@
           <skill-container :skill='skill'></skill-container>
         </div>
     </div>
-    <div class="flex-itemA" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
+    <div class="flex-itemA" >
+      <table class="edu-box">
+        <tr>
+          <th>Class/Degree</th>
+          <th>Board/university</th>
+          <th>Percentage</th>
+          <th>year of passing</th>
+        </tr>
+        <tr v-for='(obj,i) in info[2].institutes' :key='i'>
+          <td>{{ obj.type }}</td>
+          <td>{{ obj.board }}</td>
+          <td>{{ obj.marks }}</td>
+          <td>{{ obj.year }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="flex-itemA" style='min-width:100vw;padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
         <div class="flex-inside-item">
           <v-icon left dark>mdi-yin-yang</v-icon>
@@ -77,6 +93,28 @@ export default {
               skill: '80'
             }
           ]
+        },
+        {
+          institutes: [
+            {
+              type: '10th',
+              board: 'CBSE',
+              year: '2015',
+              marks: '9.5 percentile'
+            },
+            {
+              type: '12th',
+              board: 'CBSE',
+              year: '2017',
+              marks: '93.4 percentage'
+            },
+            {
+              type: 'B.Tech (CSE)',
+              board: 'GGSIPU',
+              year: 'pursuing',
+              marks: '80 percentage'
+            }
+          ]
         }
       ]
     }
@@ -93,10 +131,12 @@ export default {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  // border:1px solid white;
+  //border:10px solid white;
   width: 100vw;
   .flex-itemA{
     color: whitesmoke;
+    border:20px solid green;
+    padding:10px;
   }
   #container-box{
     background-color: antiquewhite;
@@ -119,6 +159,28 @@ export default {
       opacity:1.1;
     }
   }
+  .edu-box{
+      background-image: linear-gradient(to right top, #181517, #363237, #57535a, #797680, #9b9ca9, #9a9fab, #99a1ad, #99a4af, #78848b, #5a6468, #3f4647, #262a2a);
+      opacity: 0.9;
+      padding: 1vw;
+      box-shadow: 0px 6px 20px white;
+      color: whitesmoke;
+      cursor: pointer;
+    }
+    .edu-box:active {
+        color:red;
+        box-shadow: 0px 6px 15px rgb(148, 4, 4);
+    }
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      color: black;
+      }
 }
 /*.skillTable{
   background-image: linear-gradient(to right top, #af1e38, #d04f27, #e28200, #e2b600, #cfeb12);

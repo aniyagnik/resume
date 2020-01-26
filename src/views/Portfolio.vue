@@ -1,5 +1,6 @@
 <template>
-  <div id='portfolio'>
+  <div id='portfolio'><br>
+    <div style='text-align:center;font-size:2em;color:white'>MY PORTFOLIO</div>
     <div id='flex'>
       <div class="flex-item" v-for='(project,i) in info' :key='i'>
         <project-card :project='project'></project-card>

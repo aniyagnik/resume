@@ -34,11 +34,6 @@ export default {
           route: '/portfolio'
         },
         {
-          text: 'education',
-          icon: 'mdi-book-open-page-variant',
-          route: '/education'
-        },
-        {
           text: 'contact',
           icon: 'mdi-email',
           route: '/contact'
