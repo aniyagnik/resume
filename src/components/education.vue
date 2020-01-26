@@ -42,12 +42,12 @@ export default {
 span{
     color: aliceblue;
 }
-li{
-    color: gold;
-}
 .second{
     padding-left: 2%;
     min-width: 70%;
     width: 70%;
+    li{
+      color: gold;
+    }
 }
 </style>

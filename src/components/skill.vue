@@ -2,7 +2,7 @@
  <b-container>
    <div id='container-box-skills'>
       <v-progress-linear
-        color="light-blue"
+        :color="`${ skill.color }`"
         height="15"
         :value="`${ skill.skill }`"
         striped

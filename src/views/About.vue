@@ -25,6 +25,16 @@
         <edu-container :institute='institute'></edu-container>
       </div>
     </div>
+    <div class='flex-itemA'><br>
+      <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
+        <v-icon dark large>mdi-alphabetical</v-icon>
+        Languages</div>
+        <br>
+        <div v-for='skill in info[3].languages' :key='skill.lang'>
+          <div style='margin-left:5px;'>{{skill.lang}}</div>
+          <skill-container :skill='skill'></skill-container>
+        </div>
+    </div>
     <div class="flex-itemA" style='min-width:100vw;padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
         <div class="flex-inside-item">
@@ -68,27 +78,33 @@ export default {
           skills: [
             {
               lang: 'HTML',
-              skill: '80'
+              skill: '80',
+              color: 'blue lighten-4'
             },
             {
               lang: 'SCSS',
-              skill: '67'
+              skill: '67',
+              color: 'indigo darken-1'
             },
             {
               lang: 'JAVASCRIPT',
-              skill: '80'
+              skill: '80',
+              color: 'deep-orange lighten-2'
             },
             {
               lang: 'NODE JS',
-              skill: '70'
+              skill: '70',
+              color: 'lime accent-2'
             },
             {
               lang: 'VUE JS',
-              skill: '70'
+              skill: '70',
+              color: 'green lighten-2'
             },
             {
               lang: 'C++',
-              skill: '80'
+              skill: '80',
+              color: 'teal darken-1'
             }
           ]
         },
@@ -117,6 +133,25 @@ export default {
               year: 'pursuing',
               place: 'delhi',
               marks: '80 percentage'
+            }
+          ]
+        },
+        {
+          languages: [
+            {
+              lang: 'Hindi',
+              skill: '90',
+              color: 'orange'
+            },
+            {
+              lang: 'English',
+              skill: '70',
+              color: 'blue'
+            },
+            {
+              lang: 'Gujarati',
+              skill: '70',
+              color: 'yellow'
             }
           ]
         }
