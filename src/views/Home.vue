@@ -9,16 +9,22 @@
     <div class="flex-itemH" style='padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
         <div class="flex-inside-item">
-          <v-icon left dark x-large>mdi-github-circle</v-icon>
-          <a href="https://github.com/aniyagnik"><span style='font-size: 1.1em' class='font-weight-bold white--text text-capitalize'> github</span></a><br>
+          <a href="https://github.com/aniyagnik">
+            <v-icon left dark x-large>mdi-github-circle</v-icon>
+            <span style='font-size: 1.1em' class='font-weight-bold white--text text-capitalize'> github</span>
+          </a>
         </div>
         <div class="flex-inside-item">
-          <v-icon left dark large>mdi-linkedin-box</v-icon>
-          <a href="http://linkedin/ani789yagnik"><span style='font-size: 1.1em' class='font-weight-bold white--text text-capitalize'>linkedIn</span></a><br>
+          <a href="http://linkedin/ani789yagnik">
+            <v-icon left dark large>mdi-linkedin-box</v-icon>
+            <span style='font-size: 1.1em' class='font-weight-bold white--text text-capitalize'>linkedIn</span>
+          </a>
         </div>
         <div class="flex-inside-item">
-          <v-icon left dark large>mdi-alpha-h-box</v-icon>
-          <a href="https://www.hackerrank.com/Ani789yagnik?h_r=internal-search&hr_r=1"><span style='font-size: 1.1em' class='body-1 font-weight-bold white--text text-capitalize'>HackerRank</span></a><br>
+          <a href="https://www.hackerrank.com/Ani789yagnik?h_r=internal-search&hr_r=1">
+            <v-icon left dark large>mdi-alpha-h-box</v-icon>
+            <span style='font-size: 1.1em' class='body-1 font-weight-bold white--text text-capitalize'>HackerRank</span>
+          </a>
         </div>
       </div>
     </div>

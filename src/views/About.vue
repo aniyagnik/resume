@@ -82,7 +82,7 @@ export default {
               color: 'blue lighten-4'
             },
             {
-              lang: 'SCSS',
+              lang: 'CSS / SCSS',
               skill: '67',
               color: 'indigo darken-1'
             },
@@ -93,18 +93,23 @@ export default {
             },
             {
               lang: 'NODE JS',
-              skill: '70',
+              skill: '80',
               color: 'lime accent-2'
             },
             {
               lang: 'VUE JS',
-              skill: '70',
+              skill: '74',
               color: 'green lighten-2'
             },
             {
               lang: 'C++',
-              skill: '80',
+              skill: '84',
               color: 'teal darken-1'
+            },
+            {
+              lang: 'SQL / NO-SQL',
+              skill: '75',
+              color: 'red lighten-1'
             }
           ]
         },

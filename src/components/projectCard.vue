@@ -2,7 +2,8 @@
   <div class="box">
       <p style='font-size: 1.5em' class='head font-weight-bold text-uppercase text-center'>{{ project.name}}</p>
     <div class='projectcard'>
-      <div class='image'></div>
+      <!-- :style="`background-image:url(${project.image})`" -->
+      <div class='image' ></div>
       <div class='details text-center'>
         <p style='font-size: 1.1em' class='summ font-weight-black white--text'>{{ project.summary }}</p>
         <p style='font-size: 1em' class='link font-weight-light'>
@@ -34,6 +35,7 @@ export default {
     height: 20vw;
 }
 .image{
+  background-image: url('../assets/quiz.jpg');
   width: 27vw;
   border: 5px solid black;
   height: 20vw;

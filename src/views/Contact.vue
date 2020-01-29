@@ -49,36 +49,38 @@
       </v-form>
     </v-row>
     </div>
-    <div class='flex-itemC white--text' style='background-color:crimson'>
+    <div class='flex-itemC white--text' style='background-color:crimson;'>
       <p style='font-size:1.5em' class=' text-center font-weight-bold text-capitalize' id='head'>contacts</p>
-      <p style='font-size:0.85em' >
-        <v-icon dark left >mdi-cellphone</v-icon>
-        <a style='text-decoration:none;color:white' href="tel:+9898778871">91+9898778871</a>
-      </p>
-      <p style='font-size:0.85em' >
-        <v-icon dark left >mdi-home</v-icon>
-        <a style='text-decoration:none;color:white'
-        href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Janakpuri,+New+Delhi,+Delhi,+India&aq=0&oq=janapuri+new+delhi&sll=37.0625,-95.677068&sspn=42.987658,86.572266&ie=UTF8&hq=&hnear=Janakpuri,+New+Delhi,+West+Delhi,+Delhi,+India&ll=28.620123,77.093858&spn=0.186865,0.338173&t=m&z=12"
-        >
-          A block,red spot,southern jupiter (40 km from epicenter)
+      <div style='padding:0 50px'>
+        <p style='font-size:0.85em'>
+          <v-icon dark left >mdi-cellphone</v-icon>
+          <a style='text-decoration:none;color:white' href="tel:+9898778871">91+9898778871</a>
+        </p>
+        <p style='font-size:0.85em' >
+          <v-icon dark left >mdi-home</v-icon>
+          <a style='text-decoration:none;color:white'
+          href="https://www.google.com/maps/place/Krishna+Nagar,+New+Delhi,+Delhi+110051/@28.6537363,77.2777942,15z/data=!3m1!4b1!4m5!3m4!1s0x390cfc9c133fe2f9:0xcf68490a6216d102!8m2!3d28.6509821!4d77.286333?hl=en"
+          >
+            Krishna Nagar, Delhi, India
+            </a>
+        </p>
+        <p style='font-size:0.85em' >
+          <v-icon dark left >mdi-domain</v-icon>
+          <a style='text-decoration:none;color:white'
+          href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Janakpuri,+New+Delhi,+Delhi,+India&aq=0&oq=janapuri+new+delhi&sll=37.0625,-95.677068&sspn=42.987658,86.572266&ie=UTF8&hq=&hnear=Janakpuri,+New+Delhi,+West+Delhi,+Delhi,+India&ll=28.620123,77.093858&spn=0.186865,0.338173&t=m&z=12"
+          >
+          C-4, Janakpuri, Delhi, India
           </a>
-      </p>
-      <p style='font-size:0.85em' >
-        <v-icon dark left >mdi-domain</v-icon>
-        <a style='text-decoration:none;color:white'
-        href="https://maps.google.com/maps?f=q&source=embed&hl=en&geocode=&q=Janakpuri,+New+Delhi,+Delhi,+India&aq=0&oq=janapuri+new+delhi&sll=37.0625,-95.677068&sspn=42.987658,86.572266&ie=UTF8&hq=&hnear=Janakpuri,+New+Delhi,+West+Delhi,+Delhi,+India&ll=28.620123,77.093858&spn=0.186865,0.338173&t=m&z=12"
-        >
-        C-4, Janakpuri, Delhi, India
-        </a>
-      </p>
-      <p style='font-size:0.85em' >
-        <v-icon dark left >mdi-contact-mail</v-icon>
-        <a style='text-decoration:none;color:white'
-        href="mailto:ani789yagnik@gmail.com"
-        >
-        ani789yagnik@gmail.com
-        </a>
-      </p>
+        </p>
+        <p style='font-size:0.85em' >
+          <v-icon dark left >mdi-contact-mail</v-icon>
+          <a style='text-decoration:none;color:white'
+          href="mailto:ani789yagnik@gmail.com"
+          >
+          ani789yagnik@gmail.com
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -103,8 +105,9 @@ export default {
     validate () {
       if (this.$refs.form.validate()) {
         this.snackbar = true
+        alert('sending functionality not available...')
       } else {
-        alert('sfd')
+        alert('fill all details...')
       }
     },
     reset () {
@@ -123,7 +126,7 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  height: 92.5vh;
+  min-height: 92.5vh;
   .flex-itemC{
     border:1px solid rgb(220, 255, 25);
     margin: 1vw;

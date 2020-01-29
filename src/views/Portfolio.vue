@@ -11,7 +11,7 @@
 
 <style lang="scss">
 #portfolio{
-  background-image: url('../assets/28177.jpg');
+  background-image: url('../assets/28171.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ export default {
       info: [
         {
           name: 'Social Networking Site',
-          image: 'SNS.jpg',
+          image: '../assets/SNS.jpg',
           summary: 'A SNS (Social Networking Site) with functionalities like sign-up/login, uploading posts, viewing user, web-lock etc.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
