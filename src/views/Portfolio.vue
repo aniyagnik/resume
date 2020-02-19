@@ -51,28 +51,28 @@ export default {
       info: [
         {
           name: 'Social Networking Site',
-          image: '../assets/SNS.jpg',
+          image: 'https://wallpaperplay.com/walls/full/c/1/7/215281.jpg',
           summary: 'A SNS (Social Networking Site) with functionalities like sign-up/login, uploading posts, viewing user, web-lock etc.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'quiz',
-          image: 'quiz.jpg',
+          image: 'https://www.ecopetit.cat/wpic/mpic/81-817751_quiz-time-announcement-poster-neon-signboard-vector-quiz.jpg',
           summary: 'An website offering quiz on differnt topic of the world. The website offers 10 multiple choice questions on selected topic and keeps track of the rght answers.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'chat app',
-          image: 'chat.jpg',
+          image: 'https://clip.cookdiary.net/sites/default/files/wallpaper/comics-clipart/424345/comics-clipart-message-box-424345-6923408.jpg',
           summary: 'Offers to chat with friends on login is performed. Can send messages to multiple users at a given time. offers option of personal chat.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'
         },
         {
           name: 'cosmos',
-          image: 'cosmos.jpg',
+          image: 'https://wallpaperaccess.com/full/19922.jpg',
           summary: 'Website give interesting information about the cosmos. Detailed discription of our solar system.',
           link: 'https://project1-19.herokuapp.com',
           github: 'https://aniyagnik/nodejsproject19.git'

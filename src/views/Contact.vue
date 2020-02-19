@@ -56,7 +56,7 @@
           <v-icon dark left >mdi-cellphone</v-icon>
           <a style='text-decoration:none;color:white' href="tel:+9898778871">91+9898778871</a>
         </p>
-        <p style='font-size:0.85em' >
+        <p style='font-size:0.85em'>
           <v-icon dark left >mdi-home</v-icon>
           <a style='text-decoration:none;color:white'
           href="https://www.google.com/maps/place/Krishna+Nagar,+New+Delhi,+Delhi+110051/@28.6537363,77.2777942,15z/data=!3m1!4b1!4m5!3m4!1s0x390cfc9c133fe2f9:0xcf68490a6216d102!8m2!3d28.6509821!4d77.286333?hl=en"
