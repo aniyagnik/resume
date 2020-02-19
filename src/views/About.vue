@@ -167,7 +167,7 @@ export default {
 </script>
 <style lang="scss">
 #about{
-  background-image: url('../assets/28154.jpg');
+  background-image: url('../assets/741407.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

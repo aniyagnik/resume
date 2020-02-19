@@ -2,20 +2,20 @@
   <div class="box">
       <p style='font-size: 1.5em' class='head font-weight-bold text-uppercase text-center'>{{ project.name}}</p>
     <div class='projectcard'>
-      <!-- :style="`background-image:url(${project.image})`" -->
       <div class='image' :style="{backgroundImage: `url(${project.image})`}">
       </div>
       <div class='details text-center'>
         <p style='font-size: 1.1em' class='summ font-weight-black white--text'>{{ project.summary }}</p>
         <p style='font-size: 1em' class='link font-weight-light'>
-          <kbd>github link</kbd>&nbsp;
-          <code><a :href="`${ project.github }`">{{ project.github }}</a></code>
+          <kbd class='d-none d-md-inline-block'>github link</kbd>&nbsp;
+          <code class='d-none d-md-inline-block'><a target="_blank" :href="`${ project.github }`">{{ project.github }}</a></code>
+          <br>
         </p>
       </div>
     </div>
     <p style='font-size: 1em' class='foot font-weight-light text-center'>
       <kbd>site link</kbd>
-      <code><a :href="`${ project.link }`">{{ project.link }}</a></code>
+      <code><a :href="`${ project.link }`" target="_blank">{{ project.link }}</a></code>
     </p>
   </div>
 </template>
@@ -34,7 +34,8 @@ export default {
 <style lang='scss'>
 .box{
   justify-content: center;
-  border: 5px solid crimson;
+  border: 10px solid crimson;
+
 }
 .projectcard {
   background-color: #c5fcee;
@@ -79,7 +80,7 @@ export default {
 }
 .v-application .head {
   width: 27vw;
-   background-image: linear-gradient(to right top, #4e4e4e, #545357, #585960, #5d5f6a, #606574, #657286, #688098, #688eaa, #63a8c5, #59c4db, #54e0ea, #5ffbf1);
+   background-image: linear-gradient(to right top, #00ffd2, #00e9f1, #00cfff, #00b0ff, #008cff, #1e7cf6, #336aeb, #4458df, #585dd8, #6661d1, #7267cb, #7b6cc4);
   border: 5px solid black;
   justify-content: center;
   border-bottom: 0px;
@@ -90,11 +91,11 @@ export default {
   display: none;
   background-color: #85123f;
   padding:2px;
-  border-radius: 7%;
+  border-radius: 10%;
 }
 .v-application .foot {
   width: 27vw;
-   background-image: linear-gradient(to right top, #4e4e4e, #545357, #585960, #5d5f6a, #606574, #657286, #688098, #688eaa, #63a8c5, #59c4db, #54e0ea, #5ffbf1);
+   background-image: linear-gradient(to right top, #00ffd2, #00e9f1, #00cfff, #00b0ff, #008cff, #1e7cf6, #336aeb, #4458df, #585dd8, #6661d1, #7267cb, #7b6cc4);
   border: 5px solid black;
   justify-content: center;
   border-top: 0px;
