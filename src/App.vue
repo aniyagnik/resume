@@ -30,7 +30,7 @@ export default {
         },
         {
           text: 'portfolio',
-          icon: 'mdi-account-card-details',
+          icon: 'mdi-credit-card',
           route: '/portfolio'
         },
         {

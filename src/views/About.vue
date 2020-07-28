@@ -27,7 +27,7 @@
     </div>
     <div class='flex-itemA'><br>
       <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
-        <v-icon dark large>mdi-alphabetical</v-icon>
+        <v-icon dark large>mdi-abugida-devanagari</v-icon>
         Languages</div>
         <br>
         <div v-for='skill in info[3].languages' :key='skill.lang'>
