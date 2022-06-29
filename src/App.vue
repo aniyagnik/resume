@@ -34,6 +34,11 @@ export default {
           route: '/portfolio'
         },
         {
+          text: 'experience',
+          icon: 'mdi-briefcase',
+          route: '/experience'
+        },
+        {
           text: 'contact',
           icon: 'mdi-email',
           route: '/contact'
