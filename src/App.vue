@@ -24,19 +24,14 @@ export default {
           route: '/'
         },
         {
-          text: 'about',
+          text: 'profile',
           icon: 'mdi-account',
-          route: '/about'
+          route: '/profile'
         },
         {
           text: 'portfolio',
           icon: 'mdi-credit-card',
           route: '/portfolio'
-        },
-        {
-          text: 'experience',
-          icon: 'mdi-briefcase',
-          route: '/experience'
         },
         {
           text: 'contact',
@@ -57,7 +52,7 @@ export default {
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  background-image: linear-gradient(to top, #051937, #001e2e, #001e1f, #0f1c16, #191a16);
+  background-image: linear-gradient(to right top, #2329b1, #4d1081, #4e0057, #400235, #2b071c, #330921, #3b0b25, #430d2a, #6f014f, #9a007e, #bf00b7, #da00fb);
   box-shadow: 0px 10px 30px #001e1f;
 }
 

@@ -1,6 +1,5 @@
 <template>
   <div id='portfolio'><br>
-    <div style='text-align:center;font-size:2em;color:white;font-weight:800'>MY PORTFOLIO</div>
     <div id='flex'>
       <div class="flex-item" v-for='(project,i) in info' :key='i'>
         <project-card :project='project'></project-card>
@@ -11,7 +10,7 @@
 
 <style lang="scss">
 #portfolio{
-  background-image: url('../assets/Computer-Tech.jpg');
+  background-image: url('../assets/bg (3).png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

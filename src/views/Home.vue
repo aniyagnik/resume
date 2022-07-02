@@ -60,12 +60,11 @@ export default {
 </script>
 <style lang="scss">
 #home{
-  background-image: url('../assets/28154.jpg');
+  background-image: url('../assets/bg (3).png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   flex-direction: row;
-  padding-top: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,8 +72,8 @@ export default {
   height: 92.5vh;
   // border:3px solid rgb(0, 255, 0);
   .pic{
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
     box-shadow: 0px 5px 20px rgb(233, 190, 190);
     padding:0vw;

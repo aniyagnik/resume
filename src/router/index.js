@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Experience from '../views/Experience.vue'
+import Profile from '../views/Profile.vue'
 import Portfolio from '../views/Portfolio.vue'
 import Contact from '../views/Contact.vue'
 
@@ -15,19 +14,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'about',
-    component: About
+    path: '/profile',
+    name: 'profile',
+    component: Profile
   },
   {
     path: '/portfolio',
     name: 'portfolio',
     component: Portfolio
-  },
-  {
-    path: '/experience',
-    name: 'expierence',
-    component: Experience
   },
   {
     path: '/contact',

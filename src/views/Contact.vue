@@ -118,10 +118,11 @@ export default {
 </script>
 <style lang="scss">
 #contact{
-  background-image: url('../assets/28171.jpg');
+  background-image: url('../assets/bg (3).png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  flex-direction: row;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

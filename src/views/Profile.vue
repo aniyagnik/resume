@@ -1,20 +1,24 @@
 <template>
-  <div id='about'>
-    <div class="flex-itemA black--text aboutInfo">
-      <div id='container-box'>
-        <p style='font-size: 2.5em' class=' font-weight-black text-uppercase'>{{ info[0].title}}</p>
-        <p style='font-size: 1.25em' class='font-weight-bold text-justify'>{{ info[0].content}}</p>
+  <div id='profile'>
+    <div class="flex-itemA">
+      <div style='font-size: 2em;border-bottom:5px solid crimson' class="white--text text-uppercase">
+        <v-icon dark large>mdi-briefcase</v-icon>
+        Work Experience
+      </div>
+      <div class="flex-item" v-for='(experience,i) in info[0].experience' :key='i'>
+        <experience-card :experience='experience'></experience-card>
       </div>
     </div>
     <div class='flex-itemA'><br>
       <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
         <v-icon dark large>mdi-chart-bar</v-icon>
-        skills</div>
-        <br>
-        <div v-for='skill in info[1].skills' :key='skill.lang'>
-          <div style='margin-left:5px;'>{{skill.lang}}</div>
-          <skill-container :skill='skill'></skill-container>
-        </div>
+        Skills
+      </div>
+      <br>
+      <div v-for='skill in info[1].skills' :key='skill.lang'>
+        <div style='margin-left:5px;'>{{skill.lang}}</div>
+        <skill-container :skill='skill'></skill-container>
+      </div>
     </div>
     <div class="flex-itemA" >
       <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
@@ -24,16 +28,6 @@
       <div v-for='(institute,i) in info[2].institutes' :key=i>
         <edu-container :institute='institute'></edu-container>
       </div>
-    </div>
-    <div class='flex-itemA'><br>
-      <div style='font-size: 2em;border-bottom:5px solid yellow ' class="white--text text-uppercase">
-        <v-icon dark large>mdi-abugida-devanagari</v-icon>
-        Languages</div>
-        <br>
-        <div v-for='skill in info[3].languages' :key='skill.lang'>
-          <div style='margin-left:5px;'>{{skill.lang}}</div>
-          <skill-container :skill='skill'></skill-container>
-        </div>
     </div>
     <div class="flex-itemA" style='min-width:100vw;padding:2vw;padding-bottom:1vw;flex-grow:4'>
       <div class="flex-inside">
@@ -59,11 +53,14 @@
 
 <script>
 
+import experienceCard from '../components/experienceCard'
 import skill from '../components/skill'
 import edu from '../components/education'
+
 export default {
-  name: 'about',
+  name: 'profile',
   components: {
+    'experience-card': experienceCard,
     'skill-container': skill,
     'edu-container': edu
   },
@@ -71,8 +68,16 @@ export default {
     return {
       info: [
         {
-          title: 'about',
-          content: 'I have completed my B.Tech Degree in Computer Science engineering (Batch 2021) from Guru Gobind Singh Indraprastha University (IP University). Smart working and good time management skills are some of my best qualities. I believe my quick learning abilities, good listening skills and commitment to succeed makes me from the crowd. I am looking for opportunities to enhance my skills.'
+          experience: [
+            {
+              companyName: 'Minds2Mentor',
+              companyLink: 'https://www.minds2mentor.com/',
+              post: 'Software Development Intern',
+              duration: "Sept'19-Nov'19 (3months)",
+              certificate: 'https://drive.google.com/file/d/1KkXrwzVUM8z8Uhj-uTKNTzJncuxfPRoM/view?usp=sharing',
+              summary: ['Authentication service', 'User Cart management service', 'Administrator UI & Backend privileges']
+            }
+          ]
         },
         {
           skills: [
@@ -145,25 +150,6 @@ export default {
               marks: '9.5 percentile'
             }
           ]
-        },
-        {
-          languages: [
-            {
-              lang: 'Hindi',
-              skill: '90',
-              color: 'orange'
-            },
-            {
-              lang: 'English',
-              skill: '70',
-              color: 'blue'
-            },
-            {
-              lang: 'Gujarati',
-              skill: '70',
-              color: 'yellow'
-            }
-          ]
         }
       ]
     }
@@ -171,8 +157,8 @@ export default {
 }
 </script>
 <style lang="scss">
-#about{
-  background-image: url('../assets/741407.jpg');
+#profile{
+  background-image: url('../assets/bg (3).png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -180,16 +166,14 @@ export default {
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  //border:10px solid white;
+  flex-direction: row;
   width: 100vw;
   .flex-itemA{
     color: whitesmoke;
     padding:10px;
-  }
-  #container-box{
-    background-color: antiquewhite;
-    opacity: 0.6;
-    padding: 3vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .flex-inside{
     color:whitesmoke;
@@ -230,18 +214,5 @@ export default {
       color: black;
       }
 }
-/*.skillTable{
-  background-image: linear-gradient(to right top, #af1e38, #d04f27, #e28200, #e2b600, #cfeb12);
-  padding: 1vw;
-  border:2vw solid brown;
-  box-shadow: 0px 6px 5px white;
-}*/
-.aboutInfo{
-  max-width:50vw
-}
-@media only screen and (max-width: 1300px) {
-  .aboutInfo{
-    max-width:70vw
-  }
-}
+
 </style>
